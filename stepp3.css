@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+  }
+  
+  html {
+    background: #f5f7f7;
+    color: #393939;
+  }
+  .progress-bar {
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    color: black;
+    text-align: center;
+    white-space: nowrap;
+    background-color:   #ecf0f1     ;
+    transition: width 0.6s ease;
+  }
+  .progress-bar-wrapper {
+    width: 80%;
+    background:  #ecf0f1 
+    ;
+    margin: auto;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .progress-bar {
+    overflow: hidden;
+    text-align: center;
+    list-style-type: none;
+  }
+  
+  .progress-bar li {
+    float: left;
+    font-size: 11px;
+    line-height: 11px;
+    width: 25%;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .progress-bar li:before {
+    content: "I";
+    font-family: dreamspace;
+    display: block;
+    font-size: 10px;
+    line-height: 24px;
+    color: #d5dbdb;
+    background: #ffffff;
+    width: 24px;
+    border-radius: 50%;
+    margin: 0 auto 5px auto;
+    border: 2px #d5dbdb solid;
+  }
+  
+  .progress-bar li:after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #d5dbdb;
+    position: absolute;
+    margin: auto;
+    left: 50%;
+    top: 13px;
+    z-index: -1;
+  }
+  
+  .progress-bar li:last-child:after {
+    display: none;
+  }
+  
+  /* SIGNUP PAGE 1 */
+  
+  .signup-1 .progress-bar li:first-child:before {
+    color: #4dc5b1;
+    border-color: #4dc5b1;
+  }
+  
+  /* SIGNUP PAGE 2 */
+  
+  .signup-2 .progress-bar li:nth-child(2):before {
+    color: #4dc5b1;
+    border-color: #4dc5b1;
+  }
+  
+  .signup-2 .progress-bar li:first-child:before {
+    content: "H";
+  }
+  
+  .signup-2 .progress-bar li:first-child:after {
+    background: #4dc5b1;
+  }
+  
+  /* SIGNUP PAGE 3 */
+  
+  .signup-3 .progress-bar li:nth-child(3):before {
+    color: #4dc5b1;
+    border-color: #4dc5b1;
+  }
+  
+  .signup-3 .progress-bar li:nth-child(2):before {
+    content: "H";
+  }
+  
+  .signup-3 .progress-bar li:nth-child(2):after {
+    background: #4dc5b1;
+  }
+  
+  /* SIGNUP PAGE 4 */
+  
+  /*.signup-4 .progress-bar li:nth-child(4):before {
+    color: #4dc5b1;
+    border-color: #4dc5b1;
+  }
+  
+  .signup-4 .progress-bar li:nth-child(3):before {
+    content: "H";
+  }
+  
+  .signup-4 .progress-bar li:nth-child(3):after {
+    background: #4dc5b1;
+  }*/
+  
